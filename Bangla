@@ -1,0 +1,12 @@
+---
+layout: default
+title: Bangla
+---
+
+<h1> Basics of Bangla </h1>
+<p> What do you want to learn?: </p>
+<ul>
+  <li>Alphabet</li>
+  <li>Numbers</li>
+  <li>Basic Phrases</li>
+</ul>
