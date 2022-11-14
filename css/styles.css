@@ -2,3 +2,8 @@
   
   background-image: linear-gradient(to right, #ff3c3c, rgb(48 170 59));
 }
+
+
+.body {
+  background: red;
+}
