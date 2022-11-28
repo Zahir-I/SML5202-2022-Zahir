@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ <meta charset="utf-8">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>page 3 | sml5202-2022-JaneSmith</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="page 3" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://martinbarge.github.io/sml5202-2022-JaneSmith/page3.html" />
+<meta property="og:url" content="https://martinbarge.github.io/sml5202-2022-JaneSmith/page3.html" />
+<meta property="og:site_name" content="sml5202-2022-JaneSmith" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="page 3" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"page 3","url":"https://martinbarge.github.io/sml5202-2022-JaneSmith/page3.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/mystyles.css">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid notranslate">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">Page 3</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+<div class="container-fluid p-5 myBanner text-center notranslate">
+  <h1>Learn English with Martin</h1>
+  <p>Learn all you need to know about English!</p> 
+</div>
+  
+<div class="container mt-5">
+ <!--START OUTER DIV TO WRAP PAGE TEXT CONTENT AND SET IT NOT TO TRANSLATE -->
+<div class="notranslate">  
+<h1>Translation Example</h1>
+<p>This page contains a customised version of Google Translate, for students to translate items they wish to. It's a bit experimental, so try it out.</p>
+<p>Note: The basic code for Google Translate will translate the entire page. So we have to set up some form fields and block the translation from applying to the whole page.</p>
+<p>Enter your phrase and choose a language:</p>
+
+<!-- SET UP TRANSLATION FIELDS IN TWO COLUMNS: TEXTAREA (transInput) IN LEFT COL; OUTPUT (transOutput) IN paragraph in RIGHT COL -->
+  <div class="row">
+  <div class="col-sm-6 p-3 bg-light text-white">
+     <div id="google_translate_element"></div>
+      <textarea rows="3" id="transInput" style="width:100%;"></textarea>
+     </div>
+  <div class="col-sm-6 p-3 bg-light text-black translate">
+    <h4 class="notranslate">Translation:</h4>
+    <p id="transOutput" style="font-size:120%;"></p>
+  </div>
+</div>
+<!-- END TRANSLATION FIELDS AREA -->
+</div>
+<!--END OUTER DIV-->
+
+<!-- SCRIPTS -->
+<!-- SCRIPT 1: FUNCTIONS TO GET TEXT FROM INPUT TEXT AND DISPLAY AS OUTPUT TEXT TRANSLATED. THEN CALL TO GOOGLE TRANSLATE BUTTON HANDLER -->
+
+<script> 
+var x = document.getElementById("google_translate_element");
+x.addEventListener("click", myTrans);
+ 
+function myTrans() {
+  let myPhrase = document.getElementById("transInput").value;
+  document.getElementById('transOutput').innerHTML = myPhrase;
+  document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+}
+  
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ includedLanguages: 'fr,de,pt,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<!-- SCRIPT 2: LINK TO GOOGLE TRANSLATION FUNCTION SCRIPT  -->
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- SCRIPT 3: FUNCTION TO ENSURE PAGE TITLE IN BROWSER TAB DOES NOT TRANSLATE WHEN PAGE LOADS -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    document.getElementsByTagName("title")[0].setAttribute("class", "notranslate");
+  });
+</script>
+
+<!-- END OF SCRIPTS -->
+
+</div>
+
+</body>
+</html>
